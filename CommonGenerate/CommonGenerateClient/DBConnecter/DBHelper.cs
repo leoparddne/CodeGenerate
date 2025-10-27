@@ -17,6 +17,7 @@ namespace DBConnecter
                 DbType = dbType,
                 IsAutoCloseConnection = true
             });
+            DBType = dbType;
         }
 
         public KeyValuePair<string, CSharpDataType> GetDBTypeMapper(DbType dbType, string dbTypeName)
