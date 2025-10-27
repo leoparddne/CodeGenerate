@@ -80,7 +80,7 @@ namespace DBConnecter
             foreach (var field in fieldList)
             {
                 //获取实体类型
-                var typeName = GetDBTypeMapper(DBType, field.DataType);
+                var typeName = GetDBTypeMapper(DBType, !string.IsNullOrEmpty(field.OracleDataType) ? field.OracleDataType : field.DataType);
 
                 result.Add(new UserTabColumnOutDto
                 {
