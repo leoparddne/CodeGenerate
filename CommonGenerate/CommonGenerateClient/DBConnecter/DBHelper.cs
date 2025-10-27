@@ -64,7 +64,7 @@ namespace DBConnecter
             if (mapperTypes == null)
                 throw new System.Exception("数据库类型映射未初始化");
 
-            var typeName = mapperTypes.FirstOrDefault(f => f.Key == dbTypeName);
+            var typeName = mapperTypes.FirstOrDefault(f => f.Key.ToLower() == dbTypeName.ToLower()););
             return typeName;
         }
 
