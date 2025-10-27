@@ -14,14 +14,15 @@
 * 字段注释
 * 字段类型
 * 是否主键
-* 是否允许为空
+* 是否允许为空  
+
 ![image](./img//CommonGenerate_main.png)
 
 #### 配置文件(DBConfig.json)
 配置连接的数据库，后续优化为配置界面。 
 
 #### 模板文件(appsettings.json)
-主项目为Server.WebAPI，需要在配置文件【appsettings.json】中添加数据库信息，可参考现有配置添加  
+需要在配置文件【appsettings.json】中添加模板，可参考现有配置添加  
 
 
 #### 客户端 - CommonGenerateClient
